@@ -3,3 +3,5 @@ protobuf==4.21.12
 colorama
 Flask
 gunicorn
+audioop
+requests
