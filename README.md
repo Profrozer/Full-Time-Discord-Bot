@@ -12,7 +12,7 @@
 
 ---
 
-## ⚡ Overview
+##  Overview
 
 **Full-Time Discord Bot** is an ultra-lightweight, autonomous self-presence daemon engineered in Python. It maintains persistent 24/7 account activity, broadcasts custom activity messages, tracks live uptime dynamically in your terminal, and runs an internal Flask HTTP heartbeat to prevent cloud instances (Render, Railway, Replit, Heroku, VPS) from sleeping.
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 🏗️ Architecture & Signal Flow
+##  Architecture & Signal Flow
 
 The daemon concurrently spawns a Flask webserver thread to answer external uptime pingers while running the Nextcord asyncio event loop for gateway maintenance:
 
@@ -32,7 +32,7 @@ The daemon concurrently spawns a Flask webserver thread to answer external uptim
 
 ---
 
-## 🌙 Presence Modes
+##  Presence Modes
 
 Customize your visible status inside `main.py` by switching the `status_value` enum:
 
@@ -48,7 +48,7 @@ custom_status = "Coding/Cracking 24/7"        # Your custom text status
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone Repository
 
@@ -108,7 +108,7 @@ Account has been active for: 04h 12m 38s
 
 ---
 
-## 🌐 24/7 Cloud Hosting (No-Sleep Setup)
+##  24/7 Cloud Hosting (No-Sleep Setup)
 
 To keep your bot active continuously for free or on a VPS:
 
@@ -141,7 +141,7 @@ WantedBy=multi-user.target
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 Full-Time-Discord-Bot/
