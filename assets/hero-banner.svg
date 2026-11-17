@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <title>Full-Time Discord Bot - 24/7 Presence Engine Hero Banner</title>
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#1e1f38" />
+      <stop offset="50%" stop-color="#0e101a" />
+      <stop offset="100%" stop-color="#07080d" />
+    </radialGradient>
+    <radialGradient id="accentGlow1" cx="20%" cy="30%" r="35%">
+      <stop offset="0%" stop-color="#5865F2" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#5865F2" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="accentGlow2" cx="85%" cy="70%" r="45%">
+      <stop offset="0%" stop-color="#57F287" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#57F287" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Linear Gradients -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e202f" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#141622" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5865F2" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#2d314d" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#57F287" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Console Gradients -->
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#13141c" />
+      <stop offset="100%" stop-color="#0a0b10" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(0.92); }
+      }
+      @keyframes radar {
+        0% { r: 6px; opacity: 0.9; }
+        100% { r: 20px; opacity: 0; }
+      }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+
+      .live-dot {
+        transform-origin: 512px 145px;
+        animation: pulse 2s infinite ease-in-out;
+      }
+      .radar-ring {
+        transform-origin: 512px 145px;
+        animation: radar 2s infinite cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .cursor-blink {
+        animation: blink 1s infinite;
+      }
+      .floating-card {
+        animation: floatSlow 6s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="480" rx="16" fill="url(#bgGlow)" />
+  <rect width="1200" height="480" rx="16" fill="url(#accentGlow1)" />
+  <rect width="1200" height="480" rx="16" fill="url(#accentGlow2)" />
+
+  <!-- Subtle Grid Overlay -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="80" x2="1200" y2="80" />
+    <line x1="0" y1="160" x2="1200" y2="160" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="320" x2="1200" y2="320" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="480" />
+    <line x1="400" y1="0" x2="400" y2="480" />
+    <line x1="600" y1="0" x2="600" y2="480" />
+    <line x1="800" y1="0" x2="800" y2="480" />
+    <line x1="1000" y1="0" x2="1000" y2="480" />
+  </g>
+
+  <!-- Outer Border -->
+  <rect width="1198" height="478" x="1" y="1" rx="15" fill="none" stroke="#2b314c" stroke-width="1.5" stroke-opacity="0.6" />
+
+  <!-- LEFT HERO COLUMN: Title & Meta -->
+  <g transform="translate(64, 60)">
+    <!-- Pill Badge -->
+    <rect width="210" height="30" rx="15" fill="#5865F2" fill-opacity="0.15" stroke="#5865F2" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="16" cy="15" r="4.5" fill="#57F287" />
+    <text x="28" y="19.5" fill="#dee0fc" class="sans" font-size="12" font-weight="600" letter-spacing="0.5">DISCORD PRESENCE ENGINE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="80" fill="#ffffff" class="sans" font-size="44" font-weight="800" letter-spacing="-0.8">
+      Full-Time Discord Bot
+    </text>
+
+    <!-- Subtitle / Value Statement -->
+    <text x="0" y="118" fill="#9ba1c2" class="sans" font-size="17" font-weight="400" line-height="24">
+      Autonomous 24/7 self-presence daemon engineered with Nextcord,
+    </text>
+    <text x="0" y="142" fill="#9ba1c2" class="sans" font-size="17" font-weight="400">
+      built-in Flask heartbeat, and automatic anti-sleep pinging.
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 180)">
+      <!-- Badge 1: 24/7 Persistent -->
+      <g transform="translate(0, 0)">
+        <rect width="138" height="34" rx="8" fill="#181a27" stroke="#2c3048" stroke-width="1" />
+        <text x="14" y="21.5" fill="#57F287" class="mono" font-size="14">⚡</text>
+        <text x="34" y="21" fill="#e2e4f0" class="sans" font-size="13" font-weight="600">24/7 Always-On</text>
+      </g>
+
+      <!-- Badge 2: Nextcord Core -->
+      <g transform="translate(148, 0)">
+        <rect width="132" height="34" rx="8" fill="#181a27" stroke="#2c3048" stroke-width="1" />
+        <text x="14" y="21.5" fill="#5865F2" class="mono" font-size="14">✦</text>
+        <text x="34" y="21" fill="#e2e4f0" class="sans" font-size="13" font-weight="600">Nextcord Core</text>
+      </g>
+
+      <!-- Badge 3: Web Keep-Alive -->
+      <g transform="translate(290, 0)">
+        <rect width="144" height="34" rx="8" fill="#181a27" stroke="#2c3048" stroke-width="1" />
+        <text x="14" y="21.5" fill="#FEE75C" class="mono" font-size="14">◉</text>
+        <text x="34" y="21" fill="#e2e4f0" class="sans" font-size="13" font-weight="600">Flask Keep-Alive</text>
+      </g>
+    </g>
+
+    <!-- Quick Stats Cards Row -->
+    <g transform="translate(0, 245)">
+      <!-- Stat 1 -->
+      <rect width="135" height="74" rx="10" fill="#131522" stroke="#24273c" stroke-width="1" />
+      <text x="16" y="32" fill="#57F287" class="mono" font-size="22" font-weight="700">99.99%</text>
+      <text x="16" y="54" fill="#757c9e" class="sans" font-size="12" font-weight="500">Uptime Reliability</text>
+
+      <!-- Stat 2 -->
+      <g transform="translate(147, 0)">
+        <rect width="135" height="74" rx="10" fill="#131522" stroke="#24273c" stroke-width="1" />
+        <text x="16" y="32" fill="#5865F2" class="mono" font-size="22" font-weight="700">120s</text>
+        <text x="16" y="54" fill="#757c9e" class="sans" font-size="12" font-weight="500">Sync Frequency</text>
+      </g>
+
+      <!-- Stat 3 -->
+      <g transform="translate(294, 0)">
+        <rect width="140" height="74" rx="10" fill="#131522" stroke="#24273c" stroke-width="1" />
+        <text x="16" y="32" fill="#EB459E" class="mono" font-size="22" font-weight="700">0.02s</text>
+        <text x="16" y="54" fill="#757c9e" class="sans" font-size="12" font-weight="500">Heartbeat Latency</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Realistic Live Discord & Terminal Display -->
+  <g transform="translate(620, 48)" filter="url(#shadow)" class="floating-card">
+    <!-- Outer Terminal Card Window -->
+    <rect width="516" height="376" rx="14" fill="url(#termGrad)" />
+    <rect width="516" height="376" rx="14" fill="none" stroke="url(#cardBorder)" stroke-width="1.5" />
+
+    <!-- macOS Style Window Header -->
+    <rect width="516" height="42" rx="14" fill="#1a1c29" />
+    <path d="M0 28 L0 42 L516 42 L516 28 Z" fill="#1a1c29" />
+
+    <!-- Window Control Buttons -->
+    <circle cx="22" cy="21" r="6" fill="#ED4245" />
+    <circle cx="42" cy="21" r="6" fill="#FEE75C" />
+    <circle cx="62" cy="21" r="6" fill="#57F287" />
+
+    <!-- Terminal Window Title -->
+    <text x="258" y="26" text-anchor="middle" fill="#8890b5" class="sans" font-size="12" font-weight="600" letter-spacing="0.3">
+      session — daemon@cloud-vps: ~
+    </text>
+
+    <!-- LIVE Radar Ring Animation -->
+    <circle cx="494" cy="21" r="6" fill="#57F287" class="radar-ring" fill-opacity="0.6" />
+    <circle cx="494" cy="21" r="4" fill="#57F287" class="live-dot" />
+
+    <!-- Inner Terminal Content -->
+    <g transform="translate(24, 64)">
+      <!-- Step 1: Boot command -->
+      <text x="0" y="16" fill="#5865F2" class="mono" font-size="13" font-weight="700">$</text>
+      <text x="16" y="16" fill="#e2e4f0" class="mono" font-size="13">python main.py</text>
+
+      <!-- Step 2: Flask Web Server Started -->
+      <text x="0" y="44" fill="#57F287" class="mono" font-size="12">✔ [HTTP]</text>
+      <text x="64" y="44" fill="#9ba1c2" class="mono" font-size="12">Flask keep-alive bound to :5000</text>
+
+      <!-- Step 3: Discord Connection Card Box -->
+      <g transform="translate(0, 64)">
+        <rect width="468" height="136" rx="8" fill="#161824" stroke="#25283c" stroke-width="1" />
+
+        <!-- Discord Avatar Simulation -->
+        <g transform="translate(18, 18)">
+          <circle cx="24" cy="24" r="24" fill="#5865F2" />
+          <!-- White Discord Gamepad Silhouette -->
+          <path d="M14 19 C18 15 30 15 34 19 C38 23 39 30 36 34 C33 34 30 31 29 29 C27 30 21 30 19 29 C18 31 15 34 12 34 C9 30 10 23 14 19 Z" fill="#ffffff" />
+          <circle cx="20" cy="24" r="2" fill="#5865F2" />
+          <circle cx="28" cy="24" r="2" fill="#5865F2" />
+          <!-- Idle Moon Status Badge -->
+          <circle cx="40" cy="40" r="7" fill="#161824" />
+          <circle cx="40" cy="40" r="5" fill="#FAA81A" />
+          <circle cx="38" cy="38" r="4" fill="#161824" />
+        </g>
+
+        <!-- Account details inside card -->
+        <text x="78" y="32" fill="#ffffff" class="sans" font-size="15" font-weight="700">Profrozer#0001</text>
+        <rect x="210" y="20" width="72" height="18" rx="4" fill="#5865F2" fill-opacity="0.25" />
+        <text x="216" y="33" fill="#8da0ff" class="sans" font-size="10" font-weight="700">SELF-BOT</text>
+
+        <!-- Custom Activity Line -->
+        <text x="78" y="52" fill="#9ba1c2" class="sans" font-size="12">Custom Status:</text>
+        <text x="170" y="52" fill="#57F287" class="mono" font-size="12" font-weight="600">"Coding/Cracking 24/7"</text>
+
+        <!-- Presence State -->
+        <text x="78" y="70" fill="#9ba1c2" class="sans" font-size="12">Presence Mode:</text>
+        <text x="178" y="70" fill="#FAA81A" class="sans" font-size="12" font-weight="600">🌙 Idle (Auto-Enforced)</text>
+
+        <!-- Sync Heartbeat interval -->
+        <path d="M78 84 L450 84" stroke="#25283c" stroke-width="1" />
+        <text x="78" y="106" fill="#8890b5" class="mono" font-size="11">Enforce Task: loop every 120s [OK]</text>
+        <text x="78" y="122" fill="#8890b5" class="mono" font-size="11">Uptime Stream: active &amp; broadcasting</text>
+      </g>
+
+      <!-- Step 4: Live Dynamic Terminal Output -->
+      <g transform="translate(0, 222)">
+        <rect width="468" height="68" rx="6" fill="#0d0e15" stroke="#1f2232" stroke-width="1" />
+
+        <text x="14" y="26" fill="#57F287" class="mono" font-size="13" font-weight="700">Account has been active for:</text>
+        <text x="246" y="26" fill="#57F287" class="mono" font-size="13" font-weight="700">142h 38m 19s</text>
+
+        <text x="14" y="48" fill="#757c9e" class="mono" font-size="11">HTTP GET / → 200 OK (Render/UptimeRobot ping)</text>
+        <!-- Blinking Terminal Cursor -->
+        <rect x="362" y="38" width="7" height="12" fill="#5865F2" class="cursor-blink" />
+      </g>
+    </g>
+  </g>
+</svg>
